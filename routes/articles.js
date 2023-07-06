@@ -29,7 +29,7 @@ router.get('/new', (req, res) => {
 //FOR LOGIN AND REGISTER
 router.use(flash())
 router.use(session({
-  secret: process.env.SESSION_SECRET,
+  secret: "this is a secret",
   resave: false,
   saveUninitialized: false
 }))

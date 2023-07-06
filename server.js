@@ -20,7 +20,8 @@ var empModel = require('./models/employee');
 
 
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = "mongodb+srv://vaibhavdd00:Tgc105H9TOhsWIvd@cluster0.z8dmp96.mongodb.net/?retryWrites=true&w=majority";
+const uri = "mongodb+srv://vaibhavdd00:Tgc105H9TOhsWIvd@cluster0.z8dmp96.mongodb.net/lego?retryWrites=true&w=majority";
+
 
 // // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 // const client = new MongoClient(uri, {
@@ -44,6 +45,20 @@ const uri = "mongodb+srv://vaibhavdd00:Tgc105H9TOhsWIvd@cluster0.z8dmp96.mongodb
 //   }
 // }
 // run().catch(console.dir);
+
+
+const dburl = process.env.DB_url
+mongoose.connect(uri)
+    .then(() => {
+        console.log('connection secured')
+    })
+    .catch((err) => {
+        console.log('errorr!')
+        console.log(err)
+    })
+
+
+
 
 
 
@@ -104,9 +119,8 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 
 
-var port = process.env.PORT || '3000'
-app.listen(port, err => {
-	if (err)
-		throw err
-	console.log('Server listening on port', port)
+
+const PORT = process.env.PORT || 8000
+app.listen(PORT, () => {
+    console.log('listening on port 8000')
 })
