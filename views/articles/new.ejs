@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="/public/css/headerfooter.css">
+  <link rel="stylesheet" href="/public/css/util.css">
+  <link rel="icon" href="/public/img/fav3.png">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="/public/css/main-section1.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Articles</title>
+</head>
+<body>
+  <a name="top"></a>
+  <header class="fontwhite">
+    <nav>
+      <ul>
+        <img src="/public/img/fav3.png" alt="" class="favicon">
+        <li class="heading"><a href="#top">Legilimens </a></li>
+
+        <div class="dropdown">
+          <button id="" onclick="dropdownfunc()" class="dropbtn"><span class="material-symbols-outlined dropbtn">
+              menu
+            </span>
+            <!-- <i class="fa fa-caret-down"></i> -->
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <a class="dropdown-content" href="/">Home</a>
+            <a class="dropdown-content" href="/articles">Articles</a>
+            <a class="dropdown-content" href="/public/html/EverydayLife.html">Community</a>
+            <a class="dropdown-content" href="/public/html/Textbook.html">Textbook Psychology</a>
+          </div>
+        </div>
+        <button id="btn" onclick="Toggle()" onclick="onClick" style="color: gray" id="icon"><span
+            class="material-symbols-outlined">
+            highlight
+          </span></button>
+        <li class="navlinks dissapear"><a href="/"> Home </a></li>
+        <li class="navlinks dissapear"> <a href="/articles"> Articles </a></li>
+        <li class="navlinks dissapear"><a href="/public/html/EverydayLife.html"> Community</nobr></a>
+        </li>
+        <li class="navlinks dissapear"><a href="/public/html/Textbook.html">Textbook Psychology</a></li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+  <div class="container mb-4 mt-4">
+    <h1 style="color: var(--fontcolor);" class="mb-4">New Article</h1>
+    <!-- <form  action="/upload" method="POST" enctype="multipart/form-data"  id="image">
+      <input type="file" type="submit" name="image" >
+      <button type="submit">Upload</button>
+  </form> -->
+    <a href="/ImagesPage" class="btn btn-success">Upload Image</a>
+  
+    
+    <form style="color: var(--fontcolor);" action="/articles" method="POST">
+      <%- include('_form_fields') %>
+    </form>
+  </div>
+
+
+
+
+  <!-- <div id="uploadfile" style="margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <div class="panel-title">Upload File</div>
+             </div>  
+        <div class="panel-body" >
+            <form action="/upload" id="EmployeeForm" class="form-horizontal" method="post"  role="form" enctype="multipart/form-data">
+               
+                    
+                <div class="form-group">
+                    <label for="file" class="col-md-3 control-label">Upload File</label>
+                    <div class="col-md-9">
+                        <input type="file" class="form-control" name="file" required>
+                    </div>
+                </div>
+                
+
+                <div class="form-group">                                    
+                    <div class="col-md-offset-3 col-md-9">
+                    <input type="submit" name="submit" value="Upload" class="btn btn-primary">   
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+            </form>
+         </div>
+    </div> -->
+
+
+
+
+
+  <footer class="flex-centre">
+    <div class="footertext">
+      <p>
+        A Psychology Blog <br><br>
+        &copy Copyright Mridu Sharma | Contact: legilimency@gmail.com <br><br>
+        Instagram: abc <br>
+        Twitter: abc <br><br>
+
+        All Rights Reserved <br>
+      </p>
+    </div>
+  </footer>
+
+  <script src="/public/js/main.js"></script>
+</body>
+</html>

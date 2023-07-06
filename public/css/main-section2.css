@@ -1,0 +1,96 @@
+.container2{
+    /* margin: 50px 100px 50px 100px; */
+    margin: 6em 1em;
+    /* border-radius: 2%; */
+    /* background-color: rgb(51, 51, 51); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.parent2{
+    margin: 10em 1em;
+    /* padding: 0.03rem; */
+}
+
+
+.card{
+    padding: 0.5em;
+    background-color: var(--darkcard);
+    /* display: inline; */
+    /* width: 30em; */
+    /* flex-flow: row wrap; */
+    height: fit-content;
+    margin-inline: 1.5em;
+    margin: 1em 2em;
+    border-radius: 0.75rem;
+    box-shadow: 2px 2px 2px 3px rgb(26, 25, 25);
+}
+.card1{
+    background-image: url('/public/img/painting.jpg');
+    transition:background-position 1s;
+}
+.card2{
+    background-image: url('/public/img/painting2.jpg');
+    transition:background-position 1s;
+
+}
+.card3{
+ background-image: url('/public/img/painting.jpg');
+ transition:background-position 1s;
+
+}
+.card1:hover{
+    background-position: 25% 0px, right ;
+}
+.card2:hover{
+    background-position: 25% 0px,  right;
+}
+.card3:hover{
+    background-position: 25% 0px, right ;
+}
+.cardimg{
+    height: 40vh;
+    width:23em;
+    margin: 0.5em auto;
+    object-fit: contain;
+    display: block;
+}
+
+.textforcards{
+    /* display: inline-block; */
+    text-align: center;
+    color: rgb(230, 227, 227);
+    font-family: 'Roboto Slab', serif;
+    background-color: rgba(3, 3, 3, 0.532);
+
+    /* margin: 2em 1em; */
+    object-fit: contain;
+    
+    font-size: 1.3em;
+    
+}
+.textforcards1{
+    background-color: rgba(3, 3, 3, 0.532);
+
+    /* display: inline-block; */
+    object-fit: contain;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.6em;
+    margin: 0em 0em;
+}
+
+.textforcards1:hover{
+    font-weight: bolder;
+    
+    
+}
+
+.card:hover{
+    /* background-color: var(--darkcardhover); */
+    transform: scale(1.03);
+}
+
+

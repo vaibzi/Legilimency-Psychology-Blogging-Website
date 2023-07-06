@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="/public/css/headerfooter.css">
+  <link rel="stylesheet" href="/public/css/util.css">
+  <link rel="icon" href="/public/img/fav3.png">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="/public/css/main-section1.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Articles</title>
+</head>
+
+<body>
+  <a name="top"></a>
+  <header class="fontwhite">
+    <nav>
+      <ul>
+        <img src="/public/img/fav3.png" alt="" class="favicon">
+        <li class="heading"><a href="#top">Legilimens </a></li>
+
+        <div class="dropdown">
+          <button id="" onclick="dropdownfunc()" class="dropbtn"><span class="material-symbols-outlined dropbtn">
+              menu
+            </span>
+            <!-- <i class="fa fa-caret-down"></i> -->
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <a class="dropdown-content" href="/">Home</a>
+            <a class="dropdown-content" href="/articles">Articles</a>
+            <a class="dropdown-content" href="/public/html/EverydayLife.html">Community</a>
+            <a class="dropdown-content" href="/public/html/Textbook.html">Textbook Psychology</a>
+          </div>
+        </div>
+        <button id="btn" onclick="Toggle()" onclick="onClick" style="color: gray" id="icon"><span
+            class="material-symbols-outlined">
+            highlight
+          </span></button>
+        <li class="navlinks dissapear"><a href="/"> Home </a></li>
+        <li class="navlinks dissapear"> <a href="/articles"> Articles </a></li>
+        <li class="navlinks dissapear"><a href="/public/html/EverydayLife.html"> Community</nobr></a>
+        </li>
+        <li class="navlinks dissapear"><a href="/public/html/Textbook.html">Textbook Psychology</a></li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+    
+    <div class="aligncenter" style=" animation: opa-animate 1s; " >
+  <h1 style="color: var(--fontcolor);" class=" aligncenter ">Blog Articles</h1>
+  <a href="/articles/new" class="btn btn-success newarticle" style="text-align: center;">New Article</a>
+  <div class="container " >
+  </div>
+    
+
+    <% articles.forEach(article=> { %>
+      <div class="card mt-5 widthset centreitems container " data-aos="fade-up" data-aos-duration="1000"  data-aos-once="false">
+        
+        <div class="card-body content " >
+          
+        
+
+          <div class="col md-4 centreitems" > 
+              <img class="img-fluid imgwidth" src="<%=article.image%>" alt="">
+              <!-- <img class="img-fluid" src="/public/img/anxiety.jpg" alt=""> -->
+          </div>
+
+
+          <h4 class="card-title centreitems">
+            <%= article.title %>
+          </h4>
+          <div class="card-subtitle text-muted mb-2 centreitems">
+            <%= article.createdAt.toLocaleDateString() %>
+          </div>
+          <div class="card-text mb-2 centreitems">
+            <%= article.description %>
+          </div>
+          <br>
+          <div class="centreitems">
+          <a href="articles/<%= article.slug %>" class="btn btn-primary m-1">Read More</a>
+          <a href="articles/edit/<%= article.id %>" class="btn btn-info m-1">Edit</a>
+          <form action="/articles/<%= article.id %>?_method=DELETE" method="POST" class="d-inline m-1">
+            <button type="submit" class="btn btn-danger ">Delete</button>
+          </form>
+        </div>
+      </div>
+    </div>
+      <% }) %>
+      <a href = "#" id = "loadMore"> Load More </a>
+  </div>
+  <script src ="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>  
+    <script src ="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"> </script>  
+    
+  <footer class="flex-centre" >
+    <div class="footertext">
+      <p>
+        A Psychology Blog <br><br>
+        &copy Copyright Mridu Sharma | Contact: legilimency@gmail.com <br><br>
+        Instagram: abc <br>
+        Twitter: abc <br><br>
+
+        All Rights Reserved <br>
+      </p>
+    </div>
+  </footer>
+
+  <script src="/public/js/main.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+        once: true,
+      });
+    </script>
+  
+</body>
+
+</html>

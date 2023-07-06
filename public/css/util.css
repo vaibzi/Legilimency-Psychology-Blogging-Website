@@ -1,0 +1,370 @@
+::selection{
+    background-color: rgb(115, 154, 194);
+    
+}
+
+
+.flex-centre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.fontwhite{
+    color: var(--fontcolor);
+}
+
+/* for dark and light mode */
+button{
+    background-color: transparent;
+    padding: 0.3%;
+    border: none;
+}
+
+.moon{
+    opacity: 30%;
+}
+/* .sun{
+    
+} */
+
+#icon{
+    cursor: pointer;
+}
+
+
+/* animations */
+@keyframes opa-animate {
+    0% {
+      opacity: 0%;;
+    }
+  
+    /* 50% {
+      opacity: 70%;;
+    } */
+  
+    100% {
+      opacity: 100%;;
+    }
+  }
+
+
+
+:root{
+    --darknav: rgb(26, 23, 23);
+    --darkbody: rgb(43, 43, 43);
+    --darkfooter: rgb(35, 33, 33);
+    --darkcard:rgb(75, 158, 183);
+    --container1: rgb(17, 20, 24); /*34,33,36*/
+    --parent3: rgb(43, 43, 43);
+    --fontcolor: white;
+    --container4: rgb(16, 22, 24);
+    --subheading: rgb(196, 183, 183);
+    --darktextbook: rgb(32, 27, 41);
+    --highlight: rgba(180, 190, 179, 0.365);
+    --darksmth: rgb(31, 30, 30);
+}
+
+.light-theme{
+    --subheading: rgb(53, 51, 51);
+    --darknav: rgb(27, 34, 34);
+    --darkbody: rgb(215, 214, 214);
+    --darkfooter: rgb(48, 49, 45);
+    --container1: rgb(180, 190, 179);
+    --parent3: rgb(41, 42, 48);
+    --fontcolor:black;
+    --darkcard:rgb(151, 81, 81);
+    --container4: rgb(26, 31, 33);
+    --darktextbook: rgb(215, 214, 214);
+    --highlight: rgba(180, 190, 179, 0.365);
+    --darksmth: rgb(204, 195, 195);
+}
+
+
+/* responsive */
+@media screen and (max-width: 1450px){
+    .img1{
+        width: 21vw;
+        margin: 1em 6em 1em 1em;
+    }
+    
+    
+}
+@media screen and (max-width: 1406px) {
+    .cardimg{
+        width: 20em;
+        height: 30vh;
+    }
+    .textforcards{
+        font-size: 1em;
+    }
+    .textforcards1{
+        font-size: 1.4em;
+    }
+    .Snape-gif{
+        width: 30em;
+    }
+    .snape-text{
+        width: 30vw;
+    }
+    .footertext{
+        font-size: 1em;
+    }
+    .texting{
+        font-size: 2.4em;
+    line-height: 20vh;
+    }
+    
+}
+@media screen and (max-width: 1175px){
+   
+    .heading{
+        font-size: 2em;
+    }
+    .divforheading{
+        background-size: 20em;
+    }
+    .navlinks{
+        font-size: 1em;
+    }
+    .favicon{
+        width: 2.2em;
+    }
+    .container1{
+        height: 32em;
+    }
+    .container3img{
+        width: 20em;
+    }
+    .textforcontainer3{
+        font-size: 1.2em;
+    }
+    .cardcontainer3{
+        width: 50vw;
+    }
+    .container4img{
+        width: 20em;
+    }
+    .textforcontainer4{
+        font-size: 1em;
+    }
+    /* .navlinks{
+        font-size: 0.9em;
+    }
+    .heading{
+        font-size: 2.2em;
+    } */
+    .texting{
+        font-size: 2em;
+    line-height: 20vh;
+    }
+}
+@media screen and (max-width: 960px){
+    .cardimg0{
+        width: 50vw;
+    }
+    .heading{
+        width: 70vw;
+    }
+    .bigheading{
+        font-size: 2.2em;
+    }
+    .subheading1{
+        font-size: 1.4em;
+    }
+    .img1{
+        display: none;
+    }
+    /* .container1{
+       height: 70vh;
+    } */
+    
+    .dropdown{
+        display: inline-block;
+    }
+    .dissapear{
+        display: none;
+    }
+    
+    .cardimg{
+        width: 16em;
+        height: 25vh;
+    }
+    .textforcards{
+        font-size: 1em;
+    }
+    .textforcards1{
+        font-size: 1.2em;
+    }
+    .Snape-gif{
+        width: 25em;
+    }
+    .snape-text{
+        width: auto;
+    }
+    
+    .container3img{
+        width: 16em;
+    }
+    .textforcontainer3{
+        font-size: 1.2em;
+    }
+    .cardcontainer3{
+        width: 24em;
+    }
+    .texting{
+        font-size: 1.6em;
+    line-height: 15vh;
+    }
+
+
+@media screen and (max-width: 800px){
+    .container1{
+        height: 28em;
+        background-size: 120%;
+    }
+    .container4img{
+        width: 16em;
+    }
+    .textforcontainer4{
+        font-size: 0.8em;
+    }
+    .footertext{
+        font-size: 0.8em;
+    }
+    .tweet2{
+        width: 20em;
+    }
+    .tweet1{
+        width: 20em;
+    }
+    
+}
+@media screen and (max-width: 580px){
+    .heading{
+        font-size: 1.5em;
+        width: 80vw;
+        margin-left: 0em;
+    }
+    .divforheading{
+        background-size: 14em;
+    }
+    .navlinks{
+        font-size: 0.7em;
+    }
+    .favicon{
+        width: 2.2em;
+    }
+    .dropdown-content{
+        font-size: 0.8em;
+    }
+   
+    .container1{
+        height: 24em;
+        background-size: 150%;
+    }
+    .bigheading{
+        font-size: 1.8em;
+    }
+    .subheading1{
+        font-size: 1.2em;
+    }
+    .cardimg{
+        width: 14em;
+        height: 22vh;
+    }
+    .textforcards{
+        font-size: 0.8em;
+    }
+    .textforcards1{
+        font-size: 1em;
+    }
+    .Snape-gif{
+        width: 20em;
+    }
+    .snape-text{
+        width: auto;
+    }
+    .cardcontainer3{
+        width: 20em;
+    }
+    .container4img{
+        width: 12em;
+    }
+    .textforcontainer4{
+        font-size: 0.8em;
+        margin-bottom: 1em;
+    }
+    .texting{
+        font-size: 1.2em;
+    line-height: 16vh;
+    }
+    .d1{
+        height: 10vh;
+    width: 23vw;
+    }
+    .d2{
+        height: 25vh;
+    }
+    .d3{
+        height: 45vh;
+        background-size: 30em;
+    }
+    .d4{
+        height: 30vh;
+        background-size: 30em;
+
+    }
+    .main{
+        height: 60vh;
+    }
+    
+}
+
+@media screen and (max-width: 390px){
+    .cardimg0{
+        width: 70vw;
+    }
+    .Snape-gif{
+        display: none;
+    }
+    .cardcontainer3{
+        width: 18em;
+    }
+    .container1{
+        background-size: 200%;
+    }
+    .bigheading{
+        font-size: 1.4em;
+    }
+    .subheading1{
+        font-size: 0.9em;
+    }
+    .texting{
+        font-size: 1em;
+    line-height: 12vh;
+    }
+}  
+}
+
+
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 0.7em;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+  
+    background-color: var(--darkbody);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(35, 115, 207);
+    
+  }
+

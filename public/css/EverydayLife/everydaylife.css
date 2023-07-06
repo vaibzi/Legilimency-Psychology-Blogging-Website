@@ -1,0 +1,104 @@
+body{
+    background-color: var(--darkbody);
+}
+
+
+.communityimg{
+    /* width:1600px;
+    height: 600px; */
+    object-fit: contain;
+}
+.everydaylife0{
+    /* font-family:Arial, Helvetica, sans-serif; */
+    background-image: url('/public/img/community3.jpg');
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 6em;
+    /* animation: fadeIn 3s; */
+    /* width: 60vw; */
+    padding: 15em 1em ;
+    animation: opa-animate 1s ;
+    /* background-color: black; */
+    /* width: 100%;
+    height: 80%; */
+    
+}
+/* @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+} */
+.h2{
+    color: white;
+    
+    display: inline flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 7vw;
+    background-color: rgba(0, 0, 0, 0.34);
+}
+.h2-twitter{
+    color: black;
+    margin-bottom: 0.2em;
+    display: inline flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 5vw;
+    
+}
+
+    
+
+.section2community{
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background-color: rgb(198, 68, 71);
+    /* flex-flow: row wrap; */
+    
+}
+/* 
+.section2-1{
+    background-color: #fff;
+    flex-flow: row wrap;
+}
+.section2-2{
+    background-color: rgb(32, 24, 24);
+    flex-flow: row wrap;
+    
+    
+} */
+.twitter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 10em 0em;
+    padding-bottom: 3em;
+    background-color: rgb(81, 161, 167);
+    
+}
+.tweet1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+    object-fit: contain;
+    flex-flow: row wrap;
+    /* padding: 1em; */
+    margin: 0.5em;
+    margin-inline: 4em;
+}
+.tweet2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    object-fit: contain;
+    width: 35vw;
+    margin: 0.5em;
+    margin-inline: 4em;
+  
+
+}

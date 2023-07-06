@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Elsie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+
+    scroll-behavior:smooth;
+}
+
+header{
+    background-color: var(--darknav);
+    /* color: white; */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  
+    white-space: nowrap;
+    
+}
+.favicon{
+    margin-left: 2em;
+    width: 4vw;
+}
+
+.heading{
+    font-family: 'Elsie', cursive;
+    width: 50vw;
+    font-size:2.5vw;
+    margin-left: 0.4em;
+
+}
+.navlinks{
+    font-family: 'Roboto Slab', serif;
+    padding: 0 1em;
+    font-size: 1.2vw;
+    text-align: center;
+}
+
+nav ul{
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+nav div{
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+
+nav a:hover{
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(249, 230, 230);
+}
+
+#btn{
+    cursor: pointer;
+
+}
+
+/* Dropdown Button */
+.dropbtn {
+    color: white;
+    padding: 0.3em;
+    /* font-size: 2vw; */
+    border: none;
+    cursor: pointer;
+  
+  }
+  .navbutton{
+    top: 25%;
+    padding: 0.1em;
+  }
+  
+  /* Dropdown button on hover & focus */
+   .dropbtn:hover {
+    background-color: #2980B9;
+  } 
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    top: 25%;
+    text-align: right;
+    position: relative;
+    font-size: 1em;
+    display: none;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+  } 
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content { 
+     display: none;
+    position: relative;
+    background-color: #201f1f;
+    /* min-width: 160px; */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  } 
+  .dropdown-content:hover{
+
+    background-color: rgb(119, 181, 181);
+  }
+  /* Links inside the dropdown */
+   .dropdown-content a {
+    color: rgb(255, 244, 244);
+    padding: 1em;
+    text-decoration: none;
+    display: block;
+  }
+   
+  .show {display:block;} 
+
+footer{
+    overflow: hidden;
+    background-color: var(--darkfooter);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.footertext{
+    margin: 1em 0em;
+    height: auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    font-size: 1.2em;
+
+}
+
+
+

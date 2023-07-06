@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="/public/css/headerfooter.css">
+  <link rel="stylesheet" href="/public/css/util.css">
+  <link rel="icon" href="/public/img/fav3.png">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="/public/css/main-section1.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Image Uploading</title>
+</head>
+
+<body>
+	<a name="top"></a>
+  <header class="fontwhite">
+    <nav>
+      <ul>
+        <img src="/public/img/fav3.png" alt="" class="favicon">
+        <li class="heading"><a href="#top">Legilimens </a></li>
+
+        <div class="dropdown">
+          <button id="" onclick="dropdownfunc()" class="dropbtn"><span class="material-symbols-outlined dropbtn">
+              menu
+            </span>
+            <!-- <i class="fa fa-caret-down"></i> -->
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <a class="dropdown-content" href="/">Home</a>
+            <a class="dropdown-content" href="/articles">Articles</a>
+            <a class="dropdown-content" href="/public/html/EverydayLife.html">Community</a>
+            <a class="dropdown-content" href="/public/html/Textbook.html">Textbook Psychology</a>
+          </div>
+        </div>
+        <button id="btn" onclick="Toggle()" onclick="onClick" style="color: gray" id="icon"><span
+            class="material-symbols-outlined">
+            highlight
+          </span></button>
+        <li class="navlinks dissapear"><a href="/"> Home </a></li>
+        <li class="navlinks dissapear"> <a href="/articles"> Articles </a></li>
+        <li class="navlinks dissapear"><a href="/public/html/EverydayLife.html"> Community</nobr></a>
+        </li>
+        <li class="navlinks dissapear"><a href="/public/html/Textbook.html">Textbook Psychology</a></li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+	<div style="color: var(--fontcolor);">
+		<form action="/" method="POST" enctype="multipart/form-data">
+			
+			<div>
+				<label  for="image">Upload Image</label>
+				<input type="file" id="image"
+					name="image" value="" required>
+			</div>
+			<div>
+				<button class="btn btn-primary" type="submit">Submit</button>
+			</div>
+		</form>
+	</div>
+
+	<hr>
+
+	<h1 style="color: var(--fontcolor);">Uploaded Images</h1>
+	<div style="width: 100%;">
+		<% items.forEach(function(image) { %>
+		<div>
+			<div >
+				<img style="width: 70%;" src="data:image/<%=image.img.contentType%>;base64,
+					<%=image.img.data.toString('base64')%>">
+				<div>
+					<h5><%= image.name %></h5>
+					
+
+
+<p><%= image.desc %></p>
+
+
+
+				</div>
+			</div>
+		</div>
+		<% }) %>
+	</div>
+
+	<footer class="flex-centre">
+		<div class="footertext">
+		  <p>
+			A Psychology Blog <br><br>
+			&copy Copyright Mridu Sharma | Contact: legilimency@gmail.com <br><br>
+			Instagram: abc <br>
+			Twitter: abc <br><br>
+	
+			All Rights Reserved <br>
+		  </p>
+		</div>
+	  </footer>
+	
+	  <script src="/public/js/main.js"></script>
+
+</body>
+
+</html>

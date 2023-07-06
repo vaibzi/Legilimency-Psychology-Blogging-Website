@@ -1,0 +1,140 @@
+ body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--darktextbook);
+}
+/*
+.textbook-cards h3{
+    text-decoration: none;
+    color: var(--fontcolor);
+    text-align: center;
+
+}
+.textbook-photos{
+    object-fit: contain;
+    width: 20vw;
+} */
+
+.container2{
+    /* margin: 50px 100px 50px 100px; */
+    margin: 2em 6em;
+    animation: opa-animate 1s ;
+    /* border-radius: 2%; */
+    /* background-color: rgb(51, 51, 51); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-flow: row wrap;
+}
+.container1{
+    /* margin: 50px 100px 50px 100px; */
+    margin: 2em 6em;
+    animation: opa-animate 1s ;
+    /* border-radius: 2%; */
+    /* background-color: rgb(51, 51, 51); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-flow: row wrap;
+}
+/* .parent2{
+  
+} */
+
+
+.card{
+    
+    /* display: flow-root; */
+    /* clear: both; */
+    margin: 2em auto;
+    /* background-color: var(--textbookcards); */
+    /* width: 85vw; */
+    /* height: 73vh; */
+    height: auto;
+    margin-inline: 1.5em;
+    /* height: 80vh; */
+    border-radius: 0.75rem;
+    box-shadow: 2px 2px 2px 3px rgb(26, 25, 25);
+    
+}
+.card:hover{
+    /* background-color: var(--darkcardhover); */
+    transform: scale(1.03);
+}
+.cardimg0{
+    width:30vw;
+    display: block;
+    margin: 1vw auto 0 auto;
+    object-fit: contain;
+    
+}
+.card0{
+    background-image: url('/public/img/fabric2.jpg');
+}
+/* .card1{
+
+}
+.card2{
+    
+}
+.card3{
+    
+} */
+
+.cardimg{
+    height: 40vh;
+    width:23vw;
+    display: block;
+    margin: 1vw auto 0 auto;
+    object-fit: contain;
+}
+
+/* .textforcards{
+    text-align: center;
+    color: rgb(230, 227, 227);
+    font-family: 'Roboto Slab', serif;
+
+
+    object-fit: contain;
+    
+    font-size: 1vw;
+
+} */
+.textforcards1{
+    /* display: inline-block; */
+    object-fit: contain;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.6vw;
+    margin-bottom: 1em;
+}
+
+.textforcards1:hover{
+    font-weight: bolder;
+
+    
+}
+
+.card1, .card2, .card3{
+    background-color: rgb(57, 56, 89);
+    background-image: url('/public/img/fabric2.jpg');
+ transition:background-position 1s;
+
+}
+.card5, .card4, .card6{
+    background-image: url('/public/img/fabric.jpg');
+  background-color: rgb(75, 128, 160);
+ transition:background-position 1s;
+
+} 
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover, .card6:hover, .card0:hover{
+    background-position: 5% 0px, right ;
+}
+
+
+
+
