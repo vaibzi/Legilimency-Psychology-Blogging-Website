@@ -22,7 +22,8 @@ var empModel = require('./models/employee');
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const uri = "mongodb+srv://vaibhavdd00:Tgc105H9TOhsWIvd@cluster0.z8dmp96.mongodb.net/lego?retryWrites=true&w=majority";
 
-// Create a MongoClient with a MongoClientOptions object to set the Stable API version
+
+// // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 // const client = new MongoClient(uri, {
 //   serverApi: {
 //     version: ServerApiVersion.v1,
@@ -45,6 +46,7 @@ const uri = "mongodb+srv://vaibhavdd00:Tgc105H9TOhsWIvd@cluster0.z8dmp96.mongodb
 // }
 // run().catch(console.dir);
 
+
 const dburl = process.env.DB_url
 mongoose.connect(uri)
     .then(() => {
@@ -60,6 +62,15 @@ mongoose.connect(uri)
 
 
 
+
+mongoose.connect(uri)
+    .then(() => {
+        console.log('connection secured')
+    })
+    .catch((err) => {
+        console.log('errorr!')
+        console.log(err)
+    })
 
 
 
